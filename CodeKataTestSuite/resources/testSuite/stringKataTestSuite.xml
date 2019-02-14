@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webMethodsTestSuite description="" name="stringKataTestSuite.xml">
+    <webMethodsTestCase description="Empty String" name="TC001 - Empty String">
+        <service folder="CodeKata.exercise3.stringKata" name="stringCalculator">
+            <input>
+                <file filename="resources/data/TC001/request.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/data/TC001/response.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase description="Pass String as &quot;1&quot;" name="TC002 - pass String as &quot;1&quot;">
+        <service folder="CodeKata.exercise3.stringKata" name="stringCalculator">
+            <input>
+                <file filename="resources/data/TC002/request.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/data/TC002/response.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase description="pass string as &quot;1,2&quot;" name="TC003 - pass string as &quot;1,2&quot;">
+        <service folder="CodeKata.exercise3.stringKata" name="stringCalculator">
+            <input>
+                <file filename="resources/data/TC003/request.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/data/TC003/response.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase description="pass string as &quot;3,5,6,3,23&quot; (multiple value handling)" name="TC004 - pass string as &quot;3,5,6,3,23&quot; (multiple value handling)">
+        <service folder="CodeKata.exercise3.stringKata" name="stringCalculator">
+            <input>
+                <file filename="resources/data/TC004/request.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/data/TC004/response.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase description="pass string as &quot;1\n2,3&quot;" name="TC005 - pass string as &quot;1\n2,3&quot;">
+        <service folder="CodeKata.exercise3.stringKata" name="stringCalculator">
+            <input>
+                <file filename="resources/data/TC005/request.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/data/TC005/response.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase description="pass string as &quot;//;\n1;2&quot;" name="TC006 - pass string as &quot;//;\n1;2&quot;">
+        <service folder="CodeKata.exercise3.stringKata" name="stringCalculator">
+            <input>
+                <file filename="resources/data/TC006/request.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/data/TC006/response.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase description="pass negative value as &quot;string&quot; (eg: 1\n-2,-3)" name="TC007 - pass negative value as &quot;string&quot; (eg: 1\n-2,-3)">
+        <service folder="CodeKata.exercise3.stringKata" name="stringCalculator">
+            <input>
+                <file filename="resources/data/TC007/request.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/data/TC007/response.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase description="pass string as &quot;2,1002&quot;" name="TC008 - pass string as &quot;2,1002&quot;">
+        <service folder="CodeKata.exercise3.stringKata" name="stringCalculator">
+            <input>
+                <file filename="resources/data/TC008/request.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/data/TC008/response.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase description="pass string as &quot;//[***]\n1***2***3&quot;" name="TC009 - pass string as &quot;//[***]\n1***2***3&quot;">
+        <service folder="CodeKata.exercise3.stringKata" name="stringCalculator">
+            <input>
+                <file filename="resources/data/TC009/request.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/data/TC009/response.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase description="pass string as &quot;//[*][%]\n1*2%3&quot;" name="TC010 - pass string as &quot;//[*][%]\n1*2%3&quot;">
+        <service folder="CodeKata.exercise3.stringKata" name="stringCalculator">
+            <input>
+                <file filename="resources/data/TC010/request.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/data/TC010/response.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase description="pass string as &quot;//[*][%][&amp;]\n1*2%3&amp;8&quot;" name="TC011 - pass string as &quot;//[*][%][&amp;]\n1*2%3&amp;8&quot;">
+        <service folder="CodeKata.exercise3.stringKata" name="stringCalculator">
+            <input>
+                <file filename="resources/data/TC011/request.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/data/TC011/response.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+</webMethodsTestSuite>
